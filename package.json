@@ -1,0 +1,19 @@
+{
+  "name": "chamo-ia-landing",
+  "version": "1.0.0",
+  "description": "Landing page para Chamo IA - Acompañamiento emocional para terremotos en Venezuela",
+  "main": "index.html",
+  "scripts": {
+    "dev": "python -m http.server 3000",
+    "build": "echo 'No build needed for static site'"
+  },
+  "keywords": [
+    "chamo-ia",
+    "venezuela",
+    "terremotos",
+    "acompañamiento",
+    "emocional"
+  ],
+  "author": "Brabo Agency",
+  "license": "MIT"
+}
