@@ -3,10 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chamo IA - Acompañamiento Emocional para Terremotos en Venezuela</title>
-    <meta name="description" content="Chamo IA: Acompañamiento emocional gratuito para personas afectadas por los terremotos en Venezuela. Disponible 24/7.">
-    <link rel="stylesheet" href="styles.css">
-    <!-- Google Analytics -->
+    <meta name="description" content="Chamo IA — Acompañamiento emocional gratuito para personas afectadas por los terremotos en Venezuela. No es terapia. Es apoyo mientras llega la ayuda real.">
+    <meta property="og:title" content="Chamo IA — Estamos contigo, Venezuela">
+    <meta property="og:description" content="Acompañamiento emocional gratuito para personas afectadas por los terremotos. Disponible 24/7.">
+    <meta property="og:image" content="img/hero.jpg">
+    <title>Chamo IA — Estamos contigo, Venezuela</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
     <script async src="https://www.googletagmanager.com/gtag/js?id=GOOGLE_ANALYTICS_ID"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -14,100 +18,97 @@
         gtag('js', new Date());
         gtag('config', 'GOOGLE_ANALYTICS_ID');
     </script>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- HEADER -->
-    <header class="header">
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="chamo-ia-text">Chamo IA</span>
+                <span class="nav-separator">·</span>
+                <img src="img/brabo-logo-blanco.webp" alt="Brabo Agency" class="nav-brabo-logo">
+            </div>
+            <div class="nav-badge">Iniciativa humanitaria · Brabo Agency</div>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="hero-overlay"></div>
+        <img src="img/hero.jpg" alt="Manos unidas en apoyo" class="hero-img">
+        <div class="hero-content">
+            <div class="hero-tag">Venezuela · Junio 2026</div>
+            <h1 class="hero-title">Estamos contigo.</h1>
+            <p class="hero-subtitle">Acompañamiento emocional gratuito para personas afectadas por los terremotos.<br>No es terapia. Es apoyo mientras llega la ayuda real.</p>
+            <button class="btn-primary" onclick="abrirChamo()">
+                Iniciar chat con Chamo IA &nbsp;→
+            </button>
+            <p class="hero-note">Gratis · Disponible 24/7 · Sin registro</p>
+        </div>
+    </section>
+
+    <!-- ALERTA EMERGENCIA -->
+    <section class="alerta-emergencia">
         <div class="container">
-            <div class="logo">
-                <h1>Chamo IA</h1>
-                <p class="tagline">Estamos contigo</p>
+            <div class="alerta-box">
+                <span class="alerta-icon">🚨</span>
+                <div class="alerta-texto">
+                    <strong>¿Estás en peligro inmediato?</strong>
+                    <span>Llama ahora al <a href="tel:08007372283">0800-RESCATE (0800-737-2283)</a> o al <a href="tel:911">VEN 911</a></span>
+                </div>
             </div>
         </div>
-    </header>
-
-    <!-- HERO SECTION -->
-    <section class="hero">
-        <div class="container">
-            <h2 class="hero-title">Estamos contigo</h2>
-            <p class="hero-subtitle">Acompañamiento emocional para personas afectadas por los terremotos en Venezuela</p>
-        </div>
     </section>
 
-    <!-- CONTEXTO -->
-    <section class="contexto">
+    <!-- POR QUÉ EXISTE -->
+    <section class="porque">
         <div class="container">
-            <h3>¿Por qué existe esto?</h3>
-            <p>Estamos conscientes de la situación que vive Venezuela. Los terremotos del 24 y 25 de junio han dejado miles de personas en duelo, miedo, ansiedad. Los profesionales de la salud mental están saturados. La demanda es enorme.</p>
-            <p>Desde Brabo Agency, decidimos usar la inteligencia artificial para aportar algo inmediato: <strong>un acompañamiento emocional mientras llega la ayuda real, humana.</strong></p>
-            <p class="highlight">No es terapia. No reemplaza a un psicólogo. Es apoyo.</p>
-        </div>
-    </section>
-
-    <!-- QUÉ ES CHAMO IA -->
-    <section class="que-es">
-        <div class="container">
-            <h3>¿Quién es Chamo IA?</h3>
-            <p>Un acompañante emocional especializado en crisis. Está aquí para:</p>
-            <ul class="features">
-                <li>Ayudarte a regular el miedo y la ansiedad</li>
-                <li>Acompañarte en el duelo</li>
-                <li>Conectarte con recursos reales de ayuda</li>
-                <li>Escucharte sin juzgar</li>
-            </ul>
-            <p>Puedes hablar con Chamo IA sobre lo que sientes: pérdida de vivienda, búsqueda de desaparecidos, miedo a réplicas, culpa, rabia, tristeza.</p>
-        </div>
-    </section>
-
-    <!-- DISCLAIMER -->
-    <section class="disclaimer">
-        <div class="container">
-            <h3>⚠️ Esto es importante que sepas</h3>
-            <ul class="disclaimer-list">
-                <li><strong>Chamo IA NO es un psicólogo.</strong> Es un acompañante emocional con IA.</li>
-                <li><strong>No reemplaza la terapia profesional.</strong> Si necesitas ayuda especializada, busca un profesional.</li>
-                <li><strong>Si estás en peligro inmediato,</strong> llama al <strong>0800-RESCATE (0800-737-2283)</strong> o <strong>VEN 911</strong>.</li>
-                <li><strong>Si tienes pensamientos suicidas,</strong> llama AHORA. No estás solo. Hay ayuda.</li>
-            </ul>
-        </div>
-    </section>
-
-    <!-- BOTÓN PRINCIPAL -->
-    <section class="cta">
-        <div class="container">
-            <button class="btn-primary" onclick="abrirChamo()">Iniciar chat con Chamo IA</button>
-            <p class="btn-subtitle">Gratis. Disponible 24/7. Confidencial.</p>
-        </div>
-    </section>
-
-    <!-- RECURSOS -->
-    <section class="recursos">
-        <div class="container">
-            <h3>Recursos que necesitas ahora</h3>
-            <div class="recursos-grid">
-                <div class="recurso-card">
-                    <h4>Emergencia Inmediata</h4>
-                    <p class="numero">0800-RESCATE</p>
-                    <p class="descripcion">0800-737-2283</p>
-                    <p class="detalles">Rescate, asistencia inmediata</p>
+            <div class="porque-grid">
+                <div class="porque-texto">
+                    <span class="section-label">¿Por qué existe esto?</span>
+                    <h2>Los psicólogos no alcanzan.<br>La gente necesita apoyo ahora.</h2>
+                    <p>Los terremotos del 24 y 25 de junio dejaron miles de personas en duelo, miedo y ansiedad. Los profesionales de la salud mental están saturados. La demanda es enorme y la ayuda tarda.</p>
+                    <p>Desde <strong>Brabo Agency</strong>, decidimos usar la inteligencia artificial para aportar algo inmediato: un espacio donde hablar, procesar y regularse emocionalmente mientras llega la ayuda real.</p>
+                    <div class="disclaimer-box">
+                        <strong>Importante:</strong> Chamo IA no es un psicólogo. No diagnostica. No reemplaza la terapia profesional. Es un acompañante emocional con IA, disponible cuando no hay nadie más.
+                    </div>
                 </div>
-                <div class="recurso-card">
-                    <h4>Emergencias Generales</h4>
-                    <p class="numero">VEN 911</p>
-                    <p class="descripcion">911</p>
-                    <p class="detalles">Policía, bomberos, protección civil</p>
+                <div class="porque-imagen">
+                    <img src="img/apoyo.jpg" alt="Persona procesando sus emociones" loading="lazy">
                 </div>
-                <div class="recurso-card">
-                    <h4>Atención Médica</h4>
-                    <p class="numero">Cruz Roja</p>
-                    <p class="descripcion">+58 251 714 4895</p>
-                    <p class="detalles">Heridas, atención sanitaria, albergues</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CAPACIDADES -->
+    <section class="capacidades">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">¿Qué puede hacer Chamo IA?</span>
+                <h2>Un espacio para lo que sientes</h2>
+            </div>
+            <div class="capacidades-grid">
+                <div class="capacidad-card">
+                    <div class="capacidad-icon">💬</div>
+                    <h3>Escucharte</h3>
+                    <p>Sin juzgar, sin apresurarte. Puedes contar lo que sientes: miedo, rabia, tristeza, culpa.</p>
                 </div>
-                <div class="recurso-card">
-                    <h4>Búsqueda de Desaparecidos</h4>
-                    <p class="numero">CICR</p>
-                    <p class="descripcion">+58 412 636 5015</p>
-                    <p class="detalles">Restablecimiento de contacto familiar</p>
+                <div class="capacidad-card">
+                    <div class="capacidad-icon">🧘</div>
+                    <h3>Ayudarte a regularte</h3>
+                    <p>Técnicas simples para bajar la ansiedad, el pánico y la tensión del cuerpo.</p>
+                </div>
+                <div class="capacidad-card">
+                    <div class="capacidad-icon">💔</div>
+                    <h3>Acompañarte en el duelo</h3>
+                    <p>Pérdida de vivienda, de seres queridos, de lo que conocías. Hay espacio para todo eso.</p>
+                </div>
+                <div class="capacidad-card">
+                    <div class="capacidad-icon">📍</div>
+                    <h3>Conectarte con ayuda real</h3>
+                    <p>Números de emergencia, organizaciones y recursos disponibles en Venezuela.</p>
                 </div>
             </div>
         </div>
@@ -116,106 +117,143 @@
     <!-- CÓMO FUNCIONA -->
     <section class="como-funciona">
         <div class="container">
-            <h3>¿Cómo es una conversación con Chamo IA?</h3>
-            <ol class="steps">
-                <li>Haces clic en el botón "Iniciar chat"</li>
-                <li>Abres una conversación con Chamo IA</li>
-                <li>Cuentas lo que sientes (no hay presión, no hay juzgamiento)</li>
-                <li>Chamo IA te escucha, te acompaña, y si es necesario, te conecta con recursos</li>
-            </ol>
-            <p class="conclusion">Es como hablar con alguien que entiende, que está presente, y que sabe dónde buscar ayuda real.</p>
+            <div class="section-header">
+                <span class="section-label">¿Cómo funciona?</span>
+                <h2>Tres pasos. Sin complicaciones.</h2>
+            </div>
+            <div class="pasos-grid">
+                <div class="paso">
+                    <div class="paso-numero">01</div>
+                    <h3>Haz clic en el botón</h3>
+                    <p>Abre la conversación con Chamo IA. No necesitas crear cuenta ni registrarte.</p>
+                </div>
+                <div class="paso-flecha">→</div>
+                <div class="paso">
+                    <div class="paso-numero">02</div>
+                    <h3>Cuéntale lo que sientes</h3>
+                    <p>No hay presión. No hay juzgamiento. Habla a tu ritmo, como quieras.</p>
+                </div>
+                <div class="paso-flecha">→</div>
+                <div class="paso">
+                    <div class="paso-numero">03</div>
+                    <h3>Recibe apoyo</h3>
+                    <p>Chamo IA te escucha, te acompaña y, si es necesario, te conecta con recursos reales.</p>
+                </div>
+            </div>
+            <div class="cta-center">
+                <button class="btn-primary" onclick="abrirChamo()">
+                    Iniciar chat con Chamo IA &nbsp;→
+                </button>
+                <p class="cta-nota">Necesitas una cuenta gratuita de ChatGPT para acceder</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- RECURSOS -->
+    <section class="recursos" id="recursos">
+        <div class="recursos-overlay"></div>
+        <img src="img/recursos.jpg" alt="Venezuela" class="recursos-bg">
+        <div class="container recursos-content">
+            <div class="section-header-light">
+                <span class="section-label-light">Recursos disponibles ahora</span>
+                <h2 class="text-white">Si necesitas ayuda inmediata</h2>
+            </div>
+            <div class="recursos-grid">
+                <div class="recurso-card">
+                    <div class="recurso-tipo">Emergencia</div>
+                    <div class="recurso-nombre">0800-RESCATE</div>
+                    <div class="recurso-numero"><a href="tel:08007372283">0800-737-2283</a></div>
+                    <div class="recurso-desc">Rescate y asistencia inmediata</div>
+                </div>
+                <div class="recurso-card">
+                    <div class="recurso-tipo">Emergencias generales</div>
+                    <div class="recurso-nombre">VEN 911</div>
+                    <div class="recurso-numero"><a href="tel:911">911</a></div>
+                    <div class="recurso-desc">Policía, bomberos, protección civil</div>
+                </div>
+                <div class="recurso-card">
+                    <div class="recurso-tipo">Atención médica</div>
+                    <div class="recurso-nombre">Cruz Roja</div>
+                    <div class="recurso-numero"><a href="tel:+582517144895">+58 251 714 4895</a></div>
+                    <div class="recurso-desc">Heridas, atención sanitaria, albergues</div>
+                </div>
+                <div class="recurso-card">
+                    <div class="recurso-tipo">Personas desaparecidas</div>
+                    <div class="recurso-nombre">CICR</div>
+                    <div class="recurso-numero"><a href="tel:+584126365015">+58 412 636 5015</a></div>
+                    <div class="recurso-desc">Restablecimiento de contacto familiar</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SOBRE BRABO -->
+    <section class="sobre-brabo">
+        <div class="container">
+            <div class="brabo-box">
+                <div class="brabo-texto">
+                    <span class="section-label">Sobre esta iniciativa</span>
+                    <h2>Contenido con propósito.</h2>
+                    <p>Brabo Agency es una agencia de crecimiento digital. Esta iniciativa no tiene fines comerciales. No buscamos dinero. Buscamos aportar algo útil en un momento difícil, usando las herramientas que tenemos.</p>
+                    <p>Si esta iniciativa te fue útil, compártela con quien pueda necesitarla.</p>
+                    <a href="mailto:informacion@brabo.agency" class="btn-secondary">Escribirnos</a>
+                </div>
+                <div class="brabo-logo-area">
+                    <img src="img/brabo-logo-gris.png" alt="Brabo Agency" class="footer-brabo-logo">
+                    <p class="brabo-tagline">Agencia de crecimiento digital</p>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- FOOTER -->
     <footer class="footer">
         <div class="container">
-            <p><strong>Brabo Agency</strong> | Contenido con propósito</p>
-            <p>Esta iniciativa es humanitaria. No buscamos dinero. Buscamos ayudar.</p>
-            <div class="footer-links">
-                <a href="#terminos" onclick="mostrarTerminos()">Términos y Condiciones</a>
-                <a href="#privacidad" onclick="mostrarPrivacidad()">Política de Privacidad</a>
-                <a href="mailto:informacion@brabo.agency">Contacto</a>
+            <div class="footer-content">
+                <p class="footer-copy">© 2026 Brabo Agency · Iniciativa humanitaria</p>
+                <div class="footer-links">
+                    <a href="#" onclick="mostrarTerminos(); return false;">Términos y Condiciones</a>
+                    <a href="#" onclick="mostrarPrivacidad(); return false;">Política de Privacidad</a>
+                    <a href="mailto:informacion@brabo.agency">informacion@brabo.agency</a>
+                </div>
             </div>
         </div>
     </footer>
 
-    <!-- MODALES -->
+    <!-- MODAL TÉRMINOS -->
     <div id="modal-terminos" class="modal">
         <div class="modal-content">
-            <span class="close" onclick="cerrarModal('modal-terminos')">&times;</span>
-            <h3>Términos y Condiciones</h3>
-            <div class="modal-body">
-                <h4>1. Propósito del Servicio</h4>
-                <p>Chamo IA es un servicio de acompañamiento emocional gratuito para personas afectadas por los terremotos en Venezuela. Es una herramienta de apoyo, no un servicio médico o de terapia profesional.</p>
-                
-                <h4>2. No es Terapia</h4>
-                <p>Este servicio no reemplaza la terapia profesional con un psicólogo, psiquiatra o trabajador social. Si necesitas ayuda especializada, busca un profesional.</p>
-                
-                <h4>3. Limitaciones de Responsabilidad</h4>
-                <p>Brabo Agency no es responsable por:</p>
-                <ul>
-                    <li>Decisiones que tomes basadas en conversaciones con Chamo IA</li>
-                    <li>Daño emocional o físico que resulte del uso de este servicio</li>
-                    <li>Información incorrecta o desactualizada que Chamo IA pueda proporcionar</li>
-                    <li>Fallos técnicos o interrupciones del servicio</li>
-                </ul>
-                
-                <h4>4. Emergencias</h4>
-                <p>Si estás en peligro inmediato o tienes pensamientos suicidas, llama AHORA al 0800-RESCATE o VEN 911. No uses este servicio como reemplazo de emergencia.</p>
-                
-                <h4>5. Privacidad</h4>
-                <p>Tu privacidad es importante. No compartimos tus conversaciones con terceros sin tu consentimiento, excepto si es requerido por ley.</p>
-                
-                <h4>6. Cambios en el Servicio</h4>
-                <p>Podemos cambiar o descontinuar este servicio en cualquier momento. Te notificaremos si es posible.</p>
-                
-                <h4>7. Aceptación</h4>
-                <p>Al usar este servicio, aceptas estos términos.</p>
-            </div>
+            <button class="modal-close" onclick="cerrarModal('modal-terminos')">✕</button>
+            <h2>Términos y Condiciones</h2>
+            <p><strong>Última actualización:</strong> Junio 2026</p>
+            <h3>1. Naturaleza del servicio</h3>
+            <p>Chamo IA es un acompañante emocional basado en inteligencia artificial. <strong>No es un servicio de salud mental. No es terapia. No es psicología clínica.</strong> No reemplaza la atención de un profesional de salud mental.</p>
+            <h3>2. Limitaciones</h3>
+            <p>Chamo IA no puede diagnosticar enfermedades mentales, prescribir tratamientos, ni garantizar resultados terapéuticos. En situaciones de emergencia o crisis severa, debes contactar a servicios de emergencia.</p>
+            <h3>3. Uso responsable</h3>
+            <p>Este servicio está pensado para personas mayores de 18 años. Si eres menor de edad, úsalo con supervisión de un adulto.</p>
+            <h3>4. Emergencias</h3>
+            <p>Si tienes pensamientos de hacerte daño, llama inmediatamente al <strong>0800-RESCATE (0800-737-2283)</strong> o al <strong>VEN 911</strong>.</p>
+            <h3>5. Responsabilidad</h3>
+            <p>Brabo Agency provee esta herramienta de forma gratuita y humanitaria. No asumimos responsabilidad por decisiones tomadas en base a las conversaciones con Chamo IA.</p>
+            <h3>6. Plataforma</h3>
+            <p>Chamo IA opera sobre la plataforma de ChatGPT (OpenAI). Al usarlo, aceptas también los <a href="https://openai.com/policies/terms-of-use" target="_blank">Términos de Uso de OpenAI</a>.</p>
         </div>
     </div>
 
+    <!-- MODAL PRIVACIDAD -->
     <div id="modal-privacidad" class="modal">
         <div class="modal-content">
-            <span class="close" onclick="cerrarModal('modal-privacidad')">&times;</span>
-            <h3>Política de Privacidad</h3>
-            <div class="modal-body">
-                <h4>1. Importante: Dónde Vive Este Servicio</h4>
-                <p>Chamo IA funciona dentro de ChatGPT de OpenAI. Esto significa que <strong>OpenAI controla tus datos, no Brabo Agency</strong>.</p>
-                <p>Antes de usar este servicio, lee la <a href="https://openai.com/privacy" target="_blank">Política de Privacidad de OpenAI</a></p>
-                
-                <h4>2. Qué Información Controla OpenAI</h4>
-                <ul>
-                    <li>El contenido completo de tus conversaciones</li>
-                    <li>Tu información de cuenta de OpenAI</li>
-                    <li>Información técnica (navegador, dispositivo, IP)</li>
-                    <li>Ubicación (si lo permites)</li>
-                </ul>
-                <p>OpenAI puede usar tus conversaciones para entrenar y mejorar sus modelos (según su política).</p>
-                
-                <h4>3. Qué Controla Brabo Agency</h4>
-                <p>Brabo Agency solo controla:</p>
-                <ul>
-                    <li>El link a la landing page</li>
-                    <li>Los clics que haces en el botón (tracking básico)</li>
-                    <li><strong>NO tenemos acceso a tus conversaciones con Chamo IA</strong></li>
-                </ul>
-                
-                <h4>4. Confidencialidad de Tus Conversaciones</h4>
-                <p>Tus conversaciones con Chamo IA son confidenciales entre tú y OpenAI. Brabo Agency no las ve, no las almacena, no las usa.</p>
-                
-                <h4>5. Si Tienes Preocupaciones de Privacidad</h4>
-                <ul>
-                    <li>Lee la Política de Privacidad de OpenAI</li>
-                    <li>Si no estás cómodo compartiendo información personal con OpenAI, no uses este servicio</li>
-                    <li>Contacta a OpenAI directamente con preguntas sobre tus datos</li>
-                </ul>
-                
-                <h4>6. Contacto</h4>
-                <p>Si tienes preguntas sobre cómo Brabo Agency usa tus datos (del landing page), contacta a: <a href="mailto:informacion@brabo.agency">informacion@brabo.agency</a></p>
-                <p>Si tienes preguntas sobre cómo OpenAI usa tus datos (de las conversaciones), contacta a: <a href="https://openai.com/contact" target="_blank">https://openai.com/contact</a></p>
-            </div>
+            <button class="modal-close" onclick="cerrarModal('modal-privacidad')">✕</button>
+            <h2>Política de Privacidad</h2>
+            <p><strong>Última actualización:</strong> Junio 2026</p>
+            <h3>1. Qué información recopilamos</h3>
+            <p>Esta landing page solo recopila datos anónimos de navegación (clics, tiempo en página) a través de Google Analytics. <strong>No recopilamos nombres, correos ni datos personales.</strong></p>
+            <h3>2. Las conversaciones con Chamo IA</h3>
+            <p><strong>Importante:</strong> Las conversaciones que tienes con Chamo IA ocurren dentro de la plataforma de ChatGPT (OpenAI). Brabo Agency <strong>no tiene acceso</strong> a esas conversaciones ni las almacena. OpenAI gestiona esos datos según su propia política de privacidad.</p>
+            <p>Puedes revisar la política de privacidad de OpenAI en: <a href="https://openai.com/policies/privacy-policy" target="_blank">openai.com/policies/privacy-policy</a></p>
+            <h3>3. Contacto</h3>
+            <p>Si tienes preguntas: <a href="mailto:informacion@brabo.agency">informacion@brabo.agency</a></p>
         </div>
     </div>
 
