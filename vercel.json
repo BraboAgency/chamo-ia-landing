@@ -1,20 +1,6 @@
 {
   "version": 2,
   "name": "chamo-ia-landing",
-  "public": true,
-  "builds": [
-    {
-      "src": "index.html",
-      "use": "@vercel/static"
-    }
-  ],
-  "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "index.html"
-    }
-  ],
-  "env": {
-    "GOOGLE_ANALYTICS_ID": "@google_analytics_id"
-  }
+  "buildCommand": "echo 'No build needed for static site'",
+  "outputDirectory": "."
 }
