@@ -11,7 +11,7 @@ function abrirChamo() {
 
     // Abrir el GPT de ChatGPT
     // Reemplaza con la URL correcta del GPT
-    const chamoURL = 'const chamoURL = 'https://chatgpt.com/g/g-6a44bb96d398819196d7b16385e07e58';
+    const chamoURL = 'https://chatgpt.com/g/g-6a44bb96d398819196d7b16385e07e58';
     window.open(chamoURL, '_blank');
 }
 
